@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuisine Tchadienne Interactive</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fefefe;
+      color: #333;
+    }
+
+    header {
+      background-color: #8b0000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #a00000;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav button {
+      background: white;
+      color: #8b0000;
+      border: none;
+      margin: 5px;
+      padding: 10px 20px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .carte {
+      display: none; /* caché au départ */
+      width: 300px;
+      margin: 20px auto;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: white;
+    }
+
+    .carte img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cuisine Tchadienne</h1>
+    <p>Découvrez les spécialités en cliquant ci-dessous</p>
+  </header>
+
+  <nav>
+    <button onclick="afficher('boule de gombo')">Voir Boule de gombo</button>
+    <button onclick="afficher('Mouloukiya')">Voir Sauce de Mouloukiya</button>
+    <button onclick="afficher('karkanji')">Voir la sauce de Karkanji</button>
+  </nav>
+
+  <section id="plats">
+    <div id="boule de gombo" class="carte">
+      <img src="Sauce gombo.jpg" alt="Boule avec sauce" />
+      <h3>Boule</h3>
+      <p>Plat de base à base de mil, sorgho ou maïs, avec une sauce de gombo.</p>
+    </div>
+
+    <div id="Mouloukiya" class="carte">
+      <img src="sauce de Mouloukiya.jpg"  />
+      <h3>Sauce de Mouloukiya</h3>
+      <p>Une sauce crémeuse faite a base de feuilles de Mouloukiya, accompagnée de viande ou poisson.</p>
+    </div>
+
+    <div id="karkanji" class="carte">
+      <img src="Sauce karkandji.jpg" alt="Karkanji" />
+      <h3>Karkanji</h3>
+      <p>Boisson traditionnelle à base de fleurs d’hibiscus, souvent épicée au gingembre.</p>
+    </div>
+  </section>
+
+  <footer>
+    <ssion de promouvoir la cuisine tchadienne a travers une presentation visuelle  de ses plats emblematue; il offre une experience Interactive pour sensibiliser le public a la richesse gastronomique et culturelle du Tchad.</p>
+    
+      <p> je m'appelle ZARA une etudiante en informatique et je vous souhaite la bienvenue sur mon site qui parle sur la cuisine Tchadienne.
+             une invitation au voyage gustatif au coeur du Tchad ; entre aromes epices et recettes ancestrales;  ce site devoile les tresors d'une cuisine  authentique simple et pleine de caractere </p>
+    </footer>
+
+   &cop <p> ce site a pour miy; 2025 Cuisine Tchadienne - Tous droits réservés</p>
+  </footer>
+  <p> CONTACT: <a href="fondinafondinamustafa@gmail.com">fondinafondinamustafa@gmail.com </a>
+</p>
+</footer>
+
+
+  <script>
+    function afficher(id) {
+      // Cacher toutes les cartes
+      document.querySelectorAll('.carte').forEach(carte => {
+        carte.style.display = 'none';
+      });
+
+      // Afficher la carte sélectionnée
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
